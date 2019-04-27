@@ -1,0 +1,65 @@
+
+intents:
+- greet
+- goodbye
+- mood_affirm
+- mood_deny
+- mood_great
+- mood_unhappy
+- inform
+- query
+- answer
+- informationskunkworks
+- managingstudents
+- socialbutterfly
+
+slots:
+  group:
+    type: text
+    
+entities:
+- group
+
+actions:
+- utter_greet
+- utter_answer
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_unclear
+- utter_ask_picture
+- utter_social
+- utter_skunk
+- utter_students
+- __main__.ApiAction
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_unclear:
+  - text: "I am not sure what you are aiming for."
+  
+  utter_happy:
+  - text: "Great carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_answer:
+  - text: "This is a good subject ML"
+  
+  utter_ask_picture:
+  - text: "To cheer you up, I can show you a cute picture of a dog, cat or a bird. Which one do you choose?"
+  
+  utter_skunk:
+  - text: "NEU AI Skunkworks is a group of people who research and develop Artificial Intelligence, Machine Learning, and Deep Learning projects."
+  
+  utter_students:
+  - text: "Managed by Tej, Raj and Vivek"
+  
+  utter_social:
+  - text: "This is social butterfly"
